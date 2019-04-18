@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to The Fight</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div id = "images">
+
+  <div class="row">
+    <div class="column">
+      <img src="../img/Placeholder.png" onclick="myFunction(this.id)" alt = 'first' id = 'stage1' style="width:100%">
+    </div>
+    <div class="column">
+      <img src="../img/Placeholder.png" onclick="myFunction(this.id)" alt = 'second' id = 'stage2' style="width:100%">
+    </div>
+    <div class="column">
+      <img src="../img/Placeholder.png" onclick="myFunction(this.id)" alt = 'third' id = 'stage3' style="width:100%">
+    </div>
+    <div class="column">
+      <img src="../img/Placeholder.png" onclick="myFunction(this.id)" alt = 'fourth' id = 'stage4' style="width:100%">
+    </div>
+    <div class="column">
+      <img src="../img/Placeholder.png" onclick="myFunction(this.id)" alt = 'fifth' id = 'stage5' style="width:100%">
+    </div>
+  </div>
+</div>
+
+<div class = 'textArea' id ="textArea">
+
+</div>
+
+</body>
+
+<script>
+
+  function myFunction(id) {
+
+      switch(id) {
+        case "stage1":
+          document.getElementById('textArea').innerText = "You pressed the first Picture";
+          break;
+        case "stage2":
+          document.getElementById('textArea').innerText = "You pressed the second Picture";
+          break;
+        case "stage3":
+          document.getElementById('textArea').innerText = "You pressed the third Picture";
+          break;
+        case "stage4":
+          document.getElementById('textArea').innerText = "You pressed the fourth Picture";
+          break;
+        case "stage5":
+          document.getElementById('textArea').innerText = "You pressed the fifth Picture";
+          break;
+      default:
+        // code block
+      }
+  }
+
+</script>
+
+</html>
